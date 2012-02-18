@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<script src="../ripstop.js"></script>
+<script>
+document.onload = function () {
+  alert('hi');
+}
+</script>
+<style>
+#wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: scroll;
+  -webkit-overflow-scroll: touch;
+}
+
+#reallyBig {
+  width: 50000px;
+  height: 50000px;
+}
+</style>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="reallyBig"></div>
+  </div>
+</body>
+</html>
