@@ -3,8 +3,10 @@
 <head>
 <script src="../ripstop.js"></script>
 <script>
-document.onload = function () {
-  alert('hi');
+window.onload = function () {
+  ripstop(
+    document.getElementById('wrapper')
+  );
 }
 </script>
 <style>
@@ -15,12 +17,14 @@ document.onload = function () {
   left: 0;
   right: 0;
   overflow: scroll;
-  -webkit-overflow-scroll: touch;
+  -webkit-overflow-scrolling: touch;
+  background: rgba(0,0,150,0.5);
 }
 
 #reallyBig {
-  width: 50000px;
-  height: 50000px;
+  width: 5000px;
+  height: 5000px;
+  background: url(http://www.google.com/intl/en_com/images/srpr/logo3w.png);
 }
 </style>
 </head>
