@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<script src="../ripstop.js"></script>
+<script>
+window.onload = function () {
+  ripstop(
+    document.getElementById('wrapper')
+  );
+}
+</script>
+<style>
+#wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  background: rgba(0,0,150,0.5);
+}
+
+#reallyBig {
+  width: 100%;
+  height: 100%;
+  background: url(http://www.google.com/intl/en_com/images/srpr/logo3w.png);
+}
+</style>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="reallyBig"></div>
+  </div>
+</body>
+</html>
