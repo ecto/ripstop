@@ -1,4 +1,7 @@
-
+/*
+ * usable with pure dom access
+ * ripstop(document.getElementById('el'));
+ */
 var ripstop = function (el) {
   // apply ontouchstart to the first child
   var children = el.getElementsByTagName('*');
@@ -12,3 +15,13 @@ var ripstop = function (el) {
     el.scrollTop = 1;
   }
 }
+
+/*
+ * usable with jquery
+ * $('#el').ripstop();
+ */
+if (jQuery) (function ($) {
+  $.fn.ripstop = function () {
+    ripstop(this.get(0));
+  };
+})(jQuery);
