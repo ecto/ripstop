@@ -26,8 +26,10 @@ var ripstop = function (el) {
  * usable with jquery
  * $('#el').ripstop();
  */
-if (jQuery) (function ($) {
-  $.fn.ripstop = function () {
-    ripstop(this.get(0));
-  };
-})(jQuery);
+if (typeof jQuery != 'undefined') {
+  (function ($) {
+    $.fn.ripstop = function () {
+      ripstop(this.get(0));
+    };
+  })(jQuery);
+}
