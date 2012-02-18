@@ -48,6 +48,9 @@ The wrapper must have the following style:
 }
 ````
 
+Ripstop will take over the child element's `ontouchstart` event. If you need it for anything,
+you will have to rip out the necessary logic from Ripstop.
+
 ##license
 
 (The MIT License)
