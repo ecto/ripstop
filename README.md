@@ -5,12 +5,12 @@
 ### Before Ripstop
 
 When pulling down or up when child is already at edge, 
-the page will rip from browser chrome and reveal linen.
+_the page will rip from browser chrome and reveal linen._
 
 ### After Ripstop
 
 When pulling down or up when child is already at edge, 
-the child will rip from the parent, revealing the parent.
+_the child will rip from the parent, revealing the parent._
 
 ##usage
 
