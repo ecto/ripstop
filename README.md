@@ -1,9 +1,51 @@
-#ripstop
+#Ripstop
+
+`-webkit-overflow-scrolling: touch` is awesome. Ripstop makes it more awesome.
+
+### Before Ripstop
+
+When pulling down or up when child is already at edge, 
+the page will rip from browser chrome and reveal linen.
+
+### After Ripstop
+
+When pulling down or up when child is already at edge, 
+the child will rip from the parent, revealing the parent.
 
 ##usage
 
-````html
+Pull in Ripstop:
 
+````html
+<script src="/javascripts/ripstop.js"></script>
+````
+
+With pure JS:
+
+````javascript
+window.onload = function () {
+  ripstop(
+    document.getElementById('wrapper')
+  );
+}
+````
+
+With jQuery:
+
+````javascript
+$(document).ready(function(){
+  $('#wrapper').ripstop();
+});
+````
+
+Ripstop should be applied to a block wrapper element with one larger child.
+The wrapper must have the following style:
+
+````css
+#wrapper {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
 ````
 
 ##license
