@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="../ripstop.js"></script>
+<script>
+$(document).ready(function () {
+  $('#wrapper').ripstop();
+});
+</script>
+<style>
+#wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  background: rgba(0,0,150,0.5);
+}
+
+#reallyBig {
+  width: 5000px;
+  height: 5000px;
+  background: url(http://www.google.com/intl/en_com/images/srpr/logo3w.png);
+}
+</style>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="reallyBig"></div>
+  </div>
+</body>
+</html>
