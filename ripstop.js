@@ -1,4 +1,10 @@
 /*
+ * ripstop
+ * Cam Pedersen
+ * Feb 17, 2012
+ */
+
+/*
  * usable with pure dom access
  * ripstop(document.getElementById('el'));
  */
