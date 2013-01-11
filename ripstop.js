@@ -15,7 +15,7 @@ var ripstop = function (el) {
     var x = el.scrollTop;
     // check for bottom
     var distanceFromBottom = children[0].offsetHeight - (x + el.offsetHeight);
-    if (distanceFromBottom == 0) el.scrollTop = children[0].offsetHeight - el.offsetHeight - 1;
+    if (distanceFromBottom < 1) el.scrollTop = children[0].offsetHeight - el.offsetHeight - 1;
     // check for top
     if (x > 0) return;
     el.scrollTop = 1;
